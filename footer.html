@@ -1,0 +1,163 @@
+	<footer class="footer" id="rs_footer">
+		<div class="footer-container">
+
+			<!-- About -->
+			<div class="footer-col">
+				<img class="footer_icon" src="/img/web_icon.png" alt="">
+				<p style="color: #555;">
+					At Sri Amma Industrial Developers, we specialize in designing and constructing high-quality
+					industrial spaces that drive business growth and efficiency. With 35 years of experience in the
+					industry, we provide innovative, durable, and cost-effective solutions tailored to meet the evolving
+					needs of modern industries.
+				</p>
+
+			</div>
+
+			<!-- Quick Links -->
+			<div class="footer-col">
+				<h3 class="footer_quicklink">Quick Links</h3>
+				<ul style="font-size: medium;">
+					<li><a href="Index.html">Home</a></li>
+					<li><a href="Aboutus.html">About Us</a></li>
+					<li><a href="service.html">Service</a></li>
+					<li><a href="project.html">Project</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="privacy_policy.html">Privacy Policy</a></li>
+				</ul>
+			</div>
+
+			<!-- Services -->
+			<div class="footer-col" style="font-size: medium; color: #000;">
+				<h3 style="font-size: 20px; margin-bottom: 15px;">Services</h3>
+				<ul>
+					<li><a href="Industrial.html">Industrial Building Construction</a></li>
+					<li><a href="Residential.html">Residential Building Construction</a></li>
+					<li><a href="Commercial.html">Commercial Building Construction</a></li>
+					<li><a href="Godown.html">Godown Building Construction</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col" style="font-size: medium; color: #000;">
+				<h3 style="font-size: 20px; margin-bottom: 15px;">Contact Us</h3>
+				<ul>
+					<li>
+						<a href="tel:+919444405505">
+							<i class="fa-solid fa-phone"></i> +91 94444 05505
+						</a>
+					</li>
+
+					<li>
+						<a href="tel:+919380243013">
+							<i class="fa-solid fa-phone"></i> +91 93802 43013
+						</a>
+					</li>
+
+					<li>
+						<a href="mailto:mkrishsab@gmail.com">
+							<i class="fa-solid fa-envelope"></i> mkrishsab@gmail.com
+						</a>
+					</li>
+
+					<li>
+						<a href="https://www.google.com/maps?q=4/951, 33rd Street, TVS Colony, Annanagar West Extn, Chennai - 600101"
+							target="_blank">
+							<i class="fa-solid fa-landmark"></i>
+							4/951, 33rd Street, TVS Colony, Annanagar West Extn, Chennai - 600101.
+						</a>
+					</li>
+				</ul>
+
+			</div>
+
+			
+
+		</div>
+
+		<div class="footer-bottom">
+			<p>© 2026 All Rights Reserved By<span><a href="www.digitalcrazyhub.com"> Digital Crazy Hub</a></span></p>
+			<div class="social">
+				<i class="fa-brands fa-facebook-f"></i>
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-x-twitter"></i>
+				<i class="fa-brands fa-linkedin-in"></i>
+			</div>
+		</div>
+	</footer>
+
+	<!-- LIGHTBOX -->
+	<div class="lightbox" id="lightbox">
+		<span class="close-btn">&times;</span>
+		<span class="counter" id="counter"></span>
+		<button class="prev">&#10094;</button>
+		<img class="lightbox-img" id="lightbox-img">
+		<button class="next">&#10095;</button>
+	</div>
+
+	<!-- SCROLL TOP -->
+	<div class="scroll-top" id="scrollTop">
+		<i class="fa fa-arrow-up"></i>
+	</div>
+	<script>
+		/* ===============================
+		   LIGHTBOX SCRIPT
+		=================================*/
+		const images = document.querySelectorAll(".gallery-img");
+		const lightbox = document.getElementById("lightbox");
+		const lightboxImg = document.getElementById("lightbox-img");
+		const closeBtn = document.querySelector(".close-btn");
+		const prevBtn = document.querySelector(".prev");
+		const nextBtn = document.querySelector(".next");
+		const counter = document.getElementById("counter");
+
+		let currentIndex = 0;
+
+		function showImage(index) {
+			lightbox.style.display = "flex";
+			lightboxImg.src = images[index].src;
+			counter.textContent = `${index + 1} / ${images.length}`;
+		}
+
+		images.forEach((img, index) => {
+			img.addEventListener("click", () => {
+				currentIndex = index;
+				showImage(currentIndex);
+			});
+		});
+
+		closeBtn.onclick = () => lightbox.style.display = "none";
+
+		nextBtn.onclick = () => {
+			currentIndex = (currentIndex + 1) % images.length;
+			showImage(currentIndex);
+		};
+
+		prevBtn.onclick = () => {
+			currentIndex = (currentIndex - 1 + images.length) % images.length;
+			showImage(currentIndex);
+		};
+
+		document.addEventListener("keydown", (e) => {
+			if (lightbox.style.display === "flex") {
+				if (e.key === "ArrowRight") nextBtn.click();
+				if (e.key === "ArrowLeft") prevBtn.click();
+				if (e.key === "Escape") closeBtn.click();
+			}
+		});
+
+		/* ===============================
+		   SCROLL TOP
+		=================================*/
+		const scrollTop = document.getElementById("scrollTop");
+
+		window.addEventListener("scroll", () => {
+			if (window.scrollY > 300) {
+				scrollTop.style.display = "block";
+			} else {
+				scrollTop.style.display = "none";
+			}
+		});
+
+		scrollTop.onclick = () => {
+			window.scrollTo({ top: 0, behavior: "smooth" });
+		};
+	</script>
