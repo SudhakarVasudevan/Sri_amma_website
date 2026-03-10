@@ -14071,7 +14071,7 @@ div.rs-animation-yes:hover .elementor-animation-buzz-out {
 .rs-button.style1 .rs-btn {
     background: #A5000D;
     color: #fff;
-    padding: 19px 29px;
+    padding: 12px 26px;
     border-radius: 3px;
     overflow: hidden;
     font-weight: 500;
@@ -28994,10 +28994,10 @@ body.rtl .elementor-16735 .elementor-element.elementor-element-a6f58f6 {
     --column-gap: 0px;
     border-style: solid;
     --border-style: solid;
-    border-width: 0px 0px 1px 0px;
+    border-width: 0px 0px 2px 0px;
     --border-top-width: 0px;
     --border-right-width: 0px;
-    --border-bottom-width: 1px;
+    --border-bottom-width: 4px;
     --border-left-width: 0px;
     border-color: #FFFFFF14;
     --border-color: #FFFFFF14;
@@ -29200,7 +29200,7 @@ body.rtl .elementor-16735 .elementor-element.elementor-element-a6f58f6 {
 .elementor-16742 .elementor-element.elementor-element-6469ee5 .rs-button:not(.style2) .rs-btn, .elementor-16742 .elementor-element.elementor-element-6469ee5 .rs-button.style2 .rs-btn span {
     border-style: solid;
     border-color: #FFFFFF17;
-    border-radius: 50%;
+    border-radius: 5%;
 }
 
 /* .elementor-16742 .elementor-element.elementor-element-6469ee5 .rs-button:not(.style2) .rs-btn, .elementor-16742 .elementor-element.elementor-element-6469ee5 .rs-button.style2 .rs-btn span.rs-btn-text {

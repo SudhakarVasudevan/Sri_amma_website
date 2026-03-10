@@ -463,237 +463,238 @@
 			}
 		}
 	</style>
-	
+
 	<link rel="apple-touch-icon" href="https://demo.awaikenthemes.com/renovex/wp-content/uploads/2025/11/favicon.png">
 	<meta name="msapplication-TileImage"
 		content="https://demo.awaikenthemes.com/renovex/wp-content/uploads/2025/11/favicon.png">
-		<link rel="stylesheet" href="css/Teams.css">
+	<link rel="stylesheet" href="css/Teams.css">
 </head>
 
 <body
-	class="wp-singular page-template page-template-elementor_header_footer page page-id-5672 wp-custom-logo wp-theme-renovex tt-magic-cursor fancy-scrollbar elementor-default elementor-template-full-width elementor-kit-13 elementor-page elementor-page-5672" style="background-color: #fff;">
+	class="wp-singular page-template page-template-elementor_header_footer page page-id-5672 wp-custom-logo wp-theme-renovex tt-magic-cursor fancy-scrollbar elementor-default elementor-template-full-width elementor-kit-13 elementor-page elementor-page-5672"
+	style="background-color: #fff;">
 
-		<div class="rs-offcanvas-area">
-	<div class="rsoffwrap"></div>
-	<!-- Canvas Menu start -->
-	 <div id="header"></div>
-<nav class="right_menu_togle" data-lenis-prevent id="mobilemenu">
-	<script>
-			document.addEventListener("DOMContentLoaded", function () {
-				fetch("nav.html")
-					.then(res => res.text())
-					.then(data => {
-						document.getElementById("mobilemenu").innerHTML = data;
-					});
-			});
-		</script>
-</nav>
-</div>
+	<div class="rs-offcanvas-area">
+		<div class="rsoffwrap"></div>
+		<!-- Canvas Menu start -->
+		<div id="header"></div>
+		<nav class="right_menu_togle" data-lenis-prevent id="mobilemenu">
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					fetch("nav.html")
+						.then(res => res.text())
+						.then(data => {
+							document.getElementById("mobilemenu").innerHTML = data;
+						});
+				});
+			</script>
+		</nav>
+	</div>
 	<div id="page" class="hfeed site is-page gsap-enable">
-		
+
 		<script>
 			document.addEventListener("DOMContentLoaded", function () {
 				fetch("header.html")
 					.then(res => res.text())
 					.then(data => {
 						document.getElementById("header").innerHTML = data;
-						document.querySelectorAll('.nav-expander').forEach(function(el) {
-				el.addEventListener('click', function(e) {
-					e.preventDefault(); // stop page jump
-					document.body.classList.toggle('nav-expanded');
-				});
-			});
-			document.querySelectorAll('.rsoffwrap-close').forEach(function(el) {
-				el.addEventListener('click', function(e) {
-					console.log("click");
-					e.preventDefault(); // stop page jump
-					document.body.classList.remove('nav-expanded');
-				});
-			});
+						document.querySelectorAll('.nav-expander').forEach(function (el) {
+							el.addEventListener('click', function (e) {
+								e.preventDefault(); // stop page jump
+								document.body.classList.toggle('nav-expanded');
+							});
+						});
+						document.querySelectorAll('.rsoffwrap-close').forEach(function (el) {
+							el.addEventListener('click', function (e) {
+								console.log("click");
+								e.preventDefault(); // stop page jump
+								document.body.classList.remove('nav-expanded');
+							});
+						});
 					});
 			});
 		</script>
 
-	
-		<!--this is the top banner section-->
-            <div class="hero element1000">
-                <div class="slide active" style="background-image:url('img/Project-banner1.jpg'); height: 90%;">
-                    <div class="slide-content-title autoshow">
-                        <h1 class="banner-title">Meet Our Team</h1>
-                        <p>“Our team of engineers, designers, and builders delivering excellence.”</p>
-                    </div>
-                </div>
 
-                <div class="slide" style="background-image:url('/img/Project-banner2.jpg');">
-                    <div class="slide-content-title">
-                        <h1>Meet Our Team</h1>
-                        <p>“Our team of engineers, designers, and builders delivering excellence.”</p>
-                    </div>
-                </div>
-            </div>
+		<!--this is the top banner section-->
+		<div class="hero element1000">
+			<div class="slide active" style="background-image:url('img/Project-banner1.jpg'); height: 90%;">
+				<div class="slide-content-title autoshow">
+					<h1 class="banner-title">Meet Our Team</h1>
+					<p>“Our team of engineers, designers, and builders delivering excellence.”</p>
+				</div>
+			</div>
+
+			<div class="slide" style="background-image:url('/img/Project-banner2.jpg');">
+				<div class="slide-content-title">
+					<h1>Meet Our Team</h1>
+					<p>“Our team of engineers, designers, and builders delivering excellence.”</p>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!--Team Image content-->
 	<section class="elementer23365">
-    <div class="team-container">
-        <!-- CARD 1 -->
-        <div class="team-card">
-            <div class="team-img">
-                <img src="img/Avatar placeholders.jpg">
-            </div>
-            <div class="team-info">
-                <!-- <div class="plus">+</div> -->
-                <h3>Loraine Lee</h3>
-                <p>IT Support Specialist</p>
-                <div class="social">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-        <!-- CARD 2 -->
-        <div class="team-card">
-            <div class="team-img">
-                <img src="img/Avatar placeholders.jpg">
-            </div>
-            <div class="team-info">
-                <!-- <div class="plus">+</div> -->
-                <h3>Darren Chandler</h3>
-                <p>Cloud Solutions Expert</p>
-                <div class="social">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-        <!-- CARD 3 -->
-        <div class="team-card">
-            <div class="team-img">
-                <img src="img/Avatar placeholders.jpg">
-            </div>
-            <div class="team-info">
-                <!-- <div class="plus">+</div> -->
-                <h3>Michael Johnson</h3>
-                <p>Network Security Analyst</p>
-                <div class="social">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-        <!-- CARD 4 -->
-        <div class="team-card">
-            <div class="team-img">
-                <img src="img/Avatar placeholders.jpg">
-            </div>
-            <div class="team-info">
-                <!-- <div class="plus">+</div> -->
-                <h3>Paula Brings</h3>
-                <p>Data Backup Specialist</p>
-                <div class="social">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-        <div class="team-card">
-            <div class="team-img">
-                <img src="img/Avatar placeholders.jpg">
-            </div>
-            <div class="team-info">
-                <!-- <div class="plus">+</div> -->
-                <h3>Paula Brings</h3>
-                <p>Data Backup Specialist</p>
-                <div class="social">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-        <div class="team-card">
-            <div class="team-img">
-                <img src="img/Avatar placeholders.jpg">
-            </div>
-            <div class="team-info">
-                <!-- <div class="plus">+</div> -->
-                <h3>Paula Brings</h3>
-                <p>Data Backup Specialist</p>
-                <div class="social">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-        <div class="team-card">
-            <div class="team-img">
-                <img src="img/Avatar placeholders.jpg">
-            </div>
-            <div class="team-info">
-                <!-- <div class="plus">+</div> -->
-                <h3>Paula Brings</h3>
-                <p>Data Backup Specialist</p>
-                <div class="social">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-        <div class="team-card">
-            <div class="team-img">
-                <img src="img/Avatar placeholders.jpg">
-            </div>
-            <div class="team-info">
-                <!-- <div class="plus">+</div> -->
-                <h3>Paula Brings</h3>
-                <p>Data Backup Specialist</p>
-                <div class="social">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-        <div class="team-card">
-            <div class="team-img">
-                <img src="img/Avatar placeholders.jpg">
-            </div>
-            <div class="team-info">
-                <!-- <div class="plus">+</div> -->
-                <h3>Paula Brings</h3>
-                <p>Data Backup Specialist</p>
-                <div class="social">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
-        // simple click animation for + icon
-        document.querySelectorAll(".plus").forEach(btn => {
-            btn.addEventListener("click", function (e) {
-                e.stopPropagation()
-            })
-        })
-    </script>
+		<div class="team-container">
+			<!-- CARD 1 -->
+			<div class="team-card">
+				<div class="team-img">
+					<img src="img/Avatar placeholders.jpg">
+				</div>
+				<div class="team-info">
+					<!-- <div class="plus">+</div> -->
+					<h3>Loraine Lee</h3>
+					<p>IT Support Specialist</p>
+					<div class="social">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<!-- CARD 2 -->
+			<div class="team-card">
+				<div class="team-img">
+					<img src="img/Avatar placeholders.jpg">
+				</div>
+				<div class="team-info">
+					<!-- <div class="plus">+</div> -->
+					<h3>Darren Chandler</h3>
+					<p>Cloud Solutions Expert</p>
+					<div class="social">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<!-- CARD 3 -->
+			<div class="team-card">
+				<div class="team-img">
+					<img src="img/Avatar placeholders.jpg">
+				</div>
+				<div class="team-info">
+					<!-- <div class="plus">+</div> -->
+					<h3>Michael Johnson</h3>
+					<p>Network Security Analyst</p>
+					<div class="social">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<!-- CARD 4 -->
+			<div class="team-card">
+				<div class="team-img">
+					<img src="img/Avatar placeholders.jpg">
+				</div>
+				<div class="team-info">
+					<!-- <div class="plus">+</div> -->
+					<h3>Paula Brings</h3>
+					<p>Data Backup Specialist</p>
+					<div class="social">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="team-card">
+				<div class="team-img">
+					<img src="img/Avatar placeholders.jpg">
+				</div>
+				<div class="team-info">
+					<!-- <div class="plus">+</div> -->
+					<h3>Paula Brings</h3>
+					<p>Data Backup Specialist</p>
+					<div class="social">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="team-card">
+				<div class="team-img">
+					<img src="img/Avatar placeholders.jpg">
+				</div>
+				<div class="team-info">
+					<!-- <div class="plus">+</div> -->
+					<h3>Paula Brings</h3>
+					<p>Data Backup Specialist</p>
+					<div class="social">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="team-card">
+				<div class="team-img">
+					<img src="img/Avatar placeholders.jpg">
+				</div>
+				<div class="team-info">
+					<!-- <div class="plus">+</div> -->
+					<h3>Paula Brings</h3>
+					<p>Data Backup Specialist</p>
+					<div class="social">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="team-card">
+				<div class="team-img">
+					<img src="img/Avatar placeholders.jpg">
+				</div>
+				<div class="team-info">
+					<!-- <div class="plus">+</div> -->
+					<h3>Paula Brings</h3>
+					<p>Data Backup Specialist</p>
+					<div class="social">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="team-card">
+				<div class="team-img">
+					<img src="img/Avatar placeholders.jpg">
+				</div>
+				<div class="team-info">
+					<!-- <div class="plus">+</div> -->
+					<h3>Paula Brings</h3>
+					<p>Data Backup Specialist</p>
+					<div class="social">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			// simple click animation for + icon
+			document.querySelectorAll(".plus").forEach(btn => {
+				btn.addEventListener("click", function (e) {
+					e.stopPropagation()
+				})
+			})
+		</script>
 	</section>
 	<div id="rs-footer"></div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            fetch("footer.html")
-                .then(res => res.text())
-                .then(data => {
-                    document.getElementById("rs-footer").innerHTML = data;
-                });
-        });
-    </script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			fetch("footer.html")
+				.then(res => res.text())
+				.then(data => {
+					document.getElementById("rs-footer").innerHTML = data;
+				});
+		});
+	</script>
 	<link rel="stylesheet" id="widget-image-css" href="..//css/widget-image.min.css" media="all">
 	<script src="..//js/hooks.min.js" id="wp-hooks-js"></script>
 	<script src="..//js/i18n.min.js" id="wp-i18n-js"></script>

@@ -234,7 +234,7 @@
                         <!-- <div class="gx-company-details">Commercial Complex</div> -->
                     </div>
                 </div>
-                
+
                 <div class="gx-gallery-card">
                     <img src="/img/sitephotos/img14.jpg" class="gx-gallery-img">
                     <div class="gx-overlay">
@@ -291,7 +291,7 @@
                         <!-- <div class="gx-company-details">Commercial Complex</div> -->
                     </div>
                 </div>
-                
+
                 <div class="gx-gallery-card">
                     <img src="/img/sitephotos/img24.JPG" class="gx-gallery-img">
                     <div class="gx-overlay">
@@ -325,40 +325,40 @@
         </div>
         <script>
 
-document.addEventListener("DOMContentLoaded", function(){
+            document.addEventListener("DOMContentLoaded", function () {
 
-const gxImages = document.querySelectorAll(".gx-gallery-img");
-const gxPopup = document.getElementById("gxPopup");
-const gxPopupImg = document.getElementById("gxPopupImg");
+                const gxImages = document.querySelectorAll(".gx-gallery-img");
+                const gxPopup = document.getElementById("gxPopup");
+                const gxPopupImg = document.getElementById("gxPopupImg");
 
-/* IMAGE CLICK PREVIEW */
+                /* IMAGE CLICK PREVIEW */
 
-gxImages.forEach(function(img){
-    img.addEventListener("click", function(){
-        gxPopup.style.display = "flex";
-        gxPopupImg.src = this.src;
-    });
-});
+                gxImages.forEach(function (img) {
+                    img.addEventListener("click", function () {
+                        gxPopup.style.display = "flex";
+                        gxPopupImg.src = this.src;
+                    });
+                });
 
-/* CLICK OUTSIDE CLOSE */
+                /* CLICK OUTSIDE CLOSE */
 
-gxPopup.addEventListener("click", function(e){
-    if(e.target !== gxPopupImg){
-        gxPopup.style.display = "none";
-    }
-});
+                gxPopup.addEventListener("click", function (e) {
+                    if (e.target !== gxPopupImg) {
+                        gxPopup.style.display = "none";
+                    }
+                });
 
-/* ESC KEY CLOSE */
+                /* ESC KEY CLOSE */
 
-document.addEventListener("keydown", function(e){
-    if(e.key === "Escape"){
-        gxPopup.style.display = "none";
-    }
-});
+                document.addEventListener("keydown", function (e) {
+                    if (e.key === "Escape") {
+                        gxPopup.style.display = "none";
+                    }
+                });
 
-});
+            });
 
-</script>
+        </script>
         <!-- IMAGE POPUP -->
         <div class="gx-popup-modal" id="gxPopup">
             <img class="gx-popup-img" id="gxPopupImg">
