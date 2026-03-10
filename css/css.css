@@ -23942,7 +23942,7 @@ h1.entry-title {
 }
 
 .elementor-16735 .elementor-element.elementor-element-70a0f27 .prelements-heading .title-inner .title {
-    font-size: 64px;
+    font-size: 49px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 75px;
@@ -28810,7 +28810,7 @@ body.rtl .elementor-16735 .elementor-element.elementor-element-a6f58f6 {
 
 @media(min-width: 768px) {
     .elementor-16735 .elementor-element.elementor-element-01ccee9 {
-        --width:100%;
+        --width:80%;
     }
 
     .elementor-16735 .elementor-element.elementor-element-e1bc6a2 {
